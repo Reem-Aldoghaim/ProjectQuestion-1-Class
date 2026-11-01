@@ -7,7 +7,7 @@ private:
 	int model = 0;
 	double price = 0;
 
-public: // Setter áßá ÎÇÕíÉ
+public: // Setter Ù„ÙƒÙ„ Ø®Ø§ØµÙŠØ©
 	void setcarbrand(string newName) {
 		brand = newName;
 	}
@@ -17,7 +17,7 @@ public: // Setter áßá ÎÇÕíÉ
 	void setcarprice(double newPrice) {
 		price = newPrice;
 	}
-	// Getter áßá ÎÇÕíÉ 
+	// Getter Ù„ÙƒÙ„ Ø®Ø§ØµÙŠØ© 
 	string getcarbrand() {
 		return brand;
 	}
@@ -27,20 +27,20 @@ public: // Setter áßá ÎÇÕíÉ
 	double getcarprice() {
 		return price;
 	}
-	//ÈäÇÁ ÇáãÔíøÏ ááßÇÆä  
+	//Ø¨Ù†Ø§Ø¡ Ø§Ù„Ù…Ø´ÙŠÙ‘Ø¯ Ù„Ù„ÙƒØ§Ø¦Ù†  
 	Car(string newName, int newModel, double newPrice) {
 		brand = newName;
 		model = newModel;
 		price = newPrice;
 	}
-	//ÏÇáÉ ÚÑÖ ÇáãÚáæãÇÊ 
+	//Ø¯Ø§Ù„Ø© Ø¹Ø±Ø¶ Ø§Ù„Ù…Ø¹Ù„ÙˆÙ…Ø§Øª 
 	void displayCarInfo() {
 		cout << "\n----- Display car information -----\n";
 		cout << "Car brand : " << brand << endl;
 		cout << "Car model :" << model << endl;
 		cout << "Car price :" << price << endl;
 	}
-	//ÏÇáÉ ÍÓÇÈ ÇáÓÚÑ ÈÚÏ ÇáÎÕã
+	//Ø¯Ø§Ù„Ø© Ø­Ø³Ø§Ø¨ Ø§Ù„Ø³Ø¹Ø± Ø¨Ø¹Ø¯ Ø§Ù„Ø®ØµÙ…
 	void calculatdiscount( float percentag) {
 		double discount = price * (percentag / 100);
 		price = price - discount;
